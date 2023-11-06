@@ -139,7 +139,10 @@ Lea la guía sobre [Cómo escribir tests](Guia-Tests.md) para las aplicaciones J
 
 ## Configuración de logs
 
-Lea la guía [Configuración de logs ](Guia-Logs.md) para saber cómo configurar el log de su aplicación y poder poder visualizarlo correctamente en la plataforma de [Gestión de Logs](https://logs-panel-nopro.carm.es). 
+Lea la guía para la [Configuración de logs ](Guia-Logs.md) asi conocerá:
+ 
+1. Cómo configurar el log de su aplicación 
+2. Cómoo visualizar el log en la plataforma de [Gestión de Logs](https://logs-panel-nopro.carm.es). 
 
 
 ## Marco de trabajo para aplicaciones web
