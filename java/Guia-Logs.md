@@ -9,7 +9,7 @@ Usaremos [OpenSearch](https://opensearch.org/) para almacen y consulta logs
  - Ya no se ocupan de la rotación de logs
 
 ### Ejemplo
-Adjuntamos un ejemplo básico de configuración para log4j2 
+1. Adjuntamos un ejemplo de configuración para [log4j](https://logging.apache.org/log4j/2.x/) 
 
 ```xml 
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -26,6 +26,16 @@ Adjuntamos un ejemplo básico de configuración para log4j2
    </Loggers> 
 </Configuration> 
 
+```
+2. Si su aplicación usa [logback](https://logback.qos.ch/)
+```xml 
+<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> 
+<layout class="ch.qos.logback.classic.PatternLayout"> 
+<Pattern> 
+&lt;servapp_out&gt;%d{“yyyy-MM-dd HH:mm:ss,SSS ZZZ”} | %p | %c | %m&lt;/finmensaje&gt;%n 
+</Pattern> 
+</layout> 
+</appender> 
 ```
 ## Consulta de logs 
  #### Entorno de pruebas
